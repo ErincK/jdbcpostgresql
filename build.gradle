@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'com.erinc'
+version 'V.1.0'
+
+repositories {
+    mavenCentral()
+}
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.5.1'
+}
